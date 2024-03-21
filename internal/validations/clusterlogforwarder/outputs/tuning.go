@@ -122,6 +122,10 @@ func ValidateCumulativeDiskBuffer(clf loggingv1.ClusterLogForwarder, k8sClient c
 			allocatedBufferBytes += gatherAllocatedBuffer(anotherCLF)
 		}
 	}
+	fmt.Sprintf("=================================================")
+	fmt.Sprintf("ValidateCumulativeDiskBuffer ---> allocatedBufferBytes %i",allocatedBufferBytes)
+	fmt.Sprintf("ValidateCumulativeDiskBuffer ---> nodeDiskLimitBytes %i",allocatedBufferBytes)
+	fmt.Sprintf("=================================================")
 	if allocatedBufferBytes > nodeDiskLimitBytes {
 		return fmt.Errorf(nodeDiskLimitExceeded), nil
 	}
