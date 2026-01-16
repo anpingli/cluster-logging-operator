@@ -1,0 +1,25 @@
+= End-to-System (E2S)
+System Test	Full system with real dependencies
+Integration Test	Multiple services, maybe mocked UI
+End-to-System (E2S)	UI → Backend → Storage → External
+Full-Stack Test	Frontend + Backend + DB
+Production-like E2E	Same as prod config
+
+== Overview
+The E2S test run test using real Environment rather than mock data. this assimble all component togather and verify the logs can be receiveed in the final receiver system
+GCP:
+AWS:
+Azure:
+syslog:
+kafka:
+elasticsearch:
+splunk:
+
+The AWS, GCP and Azure Credential must be provided in proper way before run the test on these platform. and these test can only be running on OCP on these platform.
+
+
+== Execution
+=== run as binary
+=== go run
+=== run as container
+
