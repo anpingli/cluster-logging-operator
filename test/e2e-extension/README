@@ -1,0 +1,19 @@
+= End to End Test Extension
+Extend the test to https://github.com/openshift/cluster-logging-operator/tree/master/test/e2e. The test verify the Openshift Logging works as expected from Collection to the Receiver on varions of Openshift Suport clusters.
+
+== The other Possible name for this test
+QE test  
+System Test	Full system with real dependencies
+Integration Test	Multiple services, maybe mocked UI
+End-to-System (E2S)	UI → Backend → Storage → External
+Full-Stack Test	Frontend + Backend + DB
+Production-like E2E	Same as prod config
+
+== Credential:
+Some specs in End to End Test Extension use same cloud authMode as the OpenShift Cluster. The Credential must be provided on the cluster which are running on AWS, Azure and GCP. The test require addtional permision to CloudNative Resources.  The privilege to push logs to (AWS Cloudwach, AzureMonitoring Logs and Google), The privilege to create bucket in Cloud, The privilete to create and update cloud access roles need to be granted.
+
+== Execution
+=== run as binary
+=== go run
+=== run as container
+

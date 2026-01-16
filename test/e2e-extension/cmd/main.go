@@ -22,7 +22,7 @@ import (
 	exutil "github.com/openshift/origin/test/extended/util"
 
 	// If using ginkgo, import your tests here
-	_ "github.com/openshift/cluster-logging-operator/test/qe/specs"
+	_ "github.com/openshift/cluster-logging-operator/test/e2e-extension/specs"
 )
 
 func main() {

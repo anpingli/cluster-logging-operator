@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	testdata "github.com/openshift/cluster-logging-operator/test/qe/generated"
+	testdata "github.com/openshift/cluster-logging-operator/test/e2e-extension/generated"
 )
 
 var (

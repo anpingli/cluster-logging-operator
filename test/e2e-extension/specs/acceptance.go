@@ -9,7 +9,7 @@ import (
 
 	g "github.com/onsi/ginkgo/v2"
 	o "github.com/onsi/gomega"
-	exutil "github.com/openshift/cluster-logging-operator/test/qe/util"
+	exutil "github.com/openshift/cluster-logging-operator/test/e2e-extension/util"
 	"github.com/openshift/origin/test/extended/util/compat_otp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
